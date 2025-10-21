@@ -3,6 +3,10 @@
 A responsive, fully functional **Instagram-like social media application** built using **React.js (Class Components)** with **Vite**.  
 This app demonstrates **authentication**, **routing**, **state management**, **API integration**, and **responsiveness** using pure CSS and React concepts.
 
+### Live Demo
+
+- [https://instashareak.ccbp.tech](https://instashareak.ccbp.tech)
+
 ## Project Overview
 
 The **Insta Share App** allows users to:
