@@ -1,0 +1,117 @@
+/* === Base Layout === */
+.stories-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Slider Container === */
+.stories-slider-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  border-bottom: 1px solid #9f9f9f62;
+}
+
+/* === Sliders === */
+.mobile-stories-slider,
+.desktop-stories-slider {
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+.mobile-stories-slider {
+  width: 90%;
+  height: 100%;
+}
+
+.desktop-stories-slider {
+  width: 95%;
+  max-width: 1040px;
+}
+
+/* === Slick Slider Arrows === */
+.slick-next:before,
+.slick-prev:before {
+  font-size: 20px;
+  line-height: 0;
+  opacity: 0.2;
+  color: #989898;
+}
+
+/* === Failure View === */
+.stories-failure-view-image {
+  height: 24px;
+  width: 24px;
+  border-radius: 0;
+}
+
+.stories-failure-view-error {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #262626;
+}
+
+.stories-failure-view-try-again-btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  width: 102px;
+  height: 32px;
+  border: none;
+  background: #4094ef;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s ease-in-out;
+}
+
+.stories-failure-view-try-again-btn:hover {
+  background: #3181e0;
+}
+
+.stories-failure-view-try-again-btn:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* === Responsive Visibility === */
+
+/* --- Mobile First --- */
+.desktop-stories-loader,
+.desktop-stories-slider {
+  display: none;
+}
+
+/* --- Desktop (≥768px) --- */
+@media screen and (min-width: 768px) {
+  .mobile-stories-loader,
+  .mobile-stories-slider {
+    display: none;
+  }
+
+  .desktop-stories-loader,
+  .desktop-stories-slider {
+    display: block;
+  }
+
+  .stories-slider-container {
+    border-bottom: none;
+    height: 194px;
+    max-width: 1030px;
+    padding-right: 15px;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 30px;
+    color: #334155;
+  }
+}
